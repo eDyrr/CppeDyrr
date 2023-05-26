@@ -68,12 +68,6 @@ class PriorityQueue
 int main()
 {
     std::cout.setf(std::ios_base::boolalpha) ; 
-    PriorityQueue* PQ = new PriorityQueue() ; 
-    std::cout << "empty : " << PQ->isEmpty() << std::endl ; 
-    PQ->push(1) ; 
-    PQ->push(4) ;
-    /*PQ->push(2) ;
-    PQ->push(3) ;*/
-    PQ->out(PQ->Front()) ; 
+    PriorityQueue* PQ = new PriorityQueue() ;  
     return 0 ;
 }
