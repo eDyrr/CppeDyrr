@@ -61,12 +61,19 @@ byte byte::operator--(int) {
 byte operator+(const byte& a, const byte& b) {
     return byte(a.value + b.value);
 }
+byte operator + (const byte& a, const unsigned char uc) 
+{
+    return byte(a.value + uc ) ; 
+}
 
 // Overloaded subtraction operator
 byte operator-(const byte& a, const byte& b) {
     return byte(a.value - b.value);
 }
-
+byte operator - (const byte& a, const unsigned char uc) 
+{
+    return a.value - uc ; 
+}
 // Overloaded addition-assignment operator with unsigned char
 byte& byte::operator+=(unsigned char uc) {
     value += uc;
@@ -89,6 +96,21 @@ byte& byte::operator-=(unsigned char uc) {
 byte& byte::operator-=(const byte& b) {
     value -= b.value;
     return *this;
+}
+
+byte operator * (const byte &a, const byte &b)
+{
+    return byte(a.value * b.value ) ; 
+}
+
+byte operator * (const byte &b, const unsigned char uc) 
+{
+    return byte(b.value * uc) ; 
+}
+
+byte operator / (const byte &b, const unsigned char uc) 
+{
+    return byte(b.value / uc) ; 
 }
 
 byte operator % (const byte& a, const byte& b)
