@@ -18,9 +18,11 @@ class byte
     bool operator <= (const byte &b) ; 
     bool operator != (const byte &b) ;  
     friend byte operator + (const byte &a, const byte &b) ;
+    friend byte operator + (const byte& a, const unsigned char uc) ; 
     byte& operator ++ () ; 
     byte operator ++ (int) ; 
-    friend byte operator - (const byte &a, const byte &b) ; 
+    friend byte operator - (const byte &a, const byte &b) ;
+    friend byte operator - (const byte& a, const unsigned char uc) ;  
     byte& operator --() ; 
     byte operator --(int) ; 
     byte& operator += (unsigned char uc) ;
@@ -28,9 +30,11 @@ class byte
     byte& operator -= (unsigned char uc) ;
     byte& operator -= (const byte &b) ;
     friend byte operator * (const byte &a, const byte &b) ;
+    friend byte operator * (const byte &b, const unsigned char uc) ; 
     byte& operator *= (unsigned char uc) ;
     byte& operator *= (const byte &b) ;
     friend byte operator / (const byte &a, const byte &b) ;
+    friend byte operator / (const byte &b, const unsigned char uc) ; 
     byte& operator /= (unsigned char uc) ;
     byte& operator /= (const byte &b) ;
     friend byte operator % (const byte& a, const byte &b) ;
