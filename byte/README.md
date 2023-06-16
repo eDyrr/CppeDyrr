@@ -1,6 +1,6 @@
 # Byte Class
 
-A simple byte class implementation in C++.
+An implementation of the byte type in C++.
 
 ## Features
 
