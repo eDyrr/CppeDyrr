@@ -10,7 +10,7 @@ class byte
     byte() ;
     byte(unsigned char n) ;
     byte operator = (const byte &rhs) ;
-    byte* operator = (unsigned char uc) ;
+    byte& operator = (unsigned char uc) ;
     bool operator == (const byte &b) ;
     bool operator > (const byte &b) ; 
     bool operator >= (const byte &b) ; 
