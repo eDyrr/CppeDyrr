@@ -1,0 +1,17 @@
+# Byte Class
+
+The Byte class represents a single byte value and provides various operators and functionalities for working with byte data.
+
+## Usage
+
+To use the Byte class in your C++ project, follow these steps:
+
+1. Copy the `byte.h` and `byte.cpp` files into your project directory.
+
+2. Include the `byte.h` header file in your source code:
+
+   ```cpp
+   #include "byte.h"
+3. To compile just open the terminal on the directory you're in 
+4. Run `make`
+5. Then run `./output
