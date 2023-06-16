@@ -10,13 +10,13 @@ byte::byte(unsigned char n) : value(n) {}
 // Overloaded assignment operator
 byte byte::operator=(const byte& rhs) {
     value = rhs.value;
-    return *this;
+    return *this ;
 }
 
 // Overloaded assignment operator with unsigned char
-byte* byte::operator=(unsigned char uc) {
-    byte* newByte = new byte(uc);
-    return newByte;
+byte& byte::operator=(unsigned char uc) {
+    value = uc ; 
+    return *this ;
 }
 
 bool byte::operator==(const byte &b) { return value == b.value ; }
