@@ -1,0 +1,3 @@
+./main.l
+./input.txt
+./output.txt
